@@ -522,7 +522,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 563704494}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1850602459}
+        m_TargetAssemblyTypeName: IteamCraft, Assembly-CSharp
+        m_MethodName: Craft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &563704494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1267,6 +1279,7 @@ GameObject:
   - component: {fileID: 1850602458}
   - component: {fileID: 1850602457}
   - component: {fileID: 1850602456}
+  - component: {fileID: 1850602459}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -1309,10 +1322,9 @@ MonoBehaviour:
   Items:
   - {fileID: 11400000, guid: a71c51e6571375a408596482e827920a, type: 2}
   - {fileID: 11400000, guid: 024ca0bfaaba9874f8a11556556f5d78, type: 2}
-  - {fileID: 11400000, guid: 24805029a69b7984981eae2d19173856, type: 2}
   inventoryItemPresenter: {fileID: 2621494607022546491, guid: 6621c217ca0dadc40b34f468aa8ead7d, type: 3}
-  _container: {fileID: 1083403828}
-  _draggingParent: {fileID: 366183031}
+  container: {fileID: 1083403828}
+  draggingParent: {fileID: 366183031}
 --- !u!114 &1850602457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,6 +1363,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850602454}
   m_CullTransparentMesh: 1
+--- !u!114 &1850602459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850602454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac78e37afcda80143bdae78fdab29612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  result: {fileID: 11400000, guid: 24805029a69b7984981eae2d19173856, type: 2}
+  itemsNeeded:
+  - {fileID: 11400000, guid: 024ca0bfaaba9874f8a11556556f5d78, type: 2}
+  - {fileID: 11400000, guid: a71c51e6571375a408596482e827920a, type: 2}
+  inventoryItems: []
+  inventory: {fileID: 1850602456}
 --- !u!1 &2135038259
 GameObject:
   m_ObjectHideFlags: 0

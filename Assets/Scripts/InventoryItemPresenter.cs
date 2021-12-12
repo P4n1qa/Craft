@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+
     public class InventoryItemPresenter: MonoBehaviour , IDragHandler , IEndDragHandler , IBeginDragHandler
     {
-    [SerializeField] Text _nameField;
-    [SerializeField] Image _iconField;
+    [SerializeField] Text nameField;
+    [SerializeField] Image iconField;
 
     private Transform _draggingParent;
     private Transform _originalParent;
@@ -42,8 +43,8 @@ using UnityEngine.EventSystems;
 
     public void Render(IItem item)
     {
-        _nameField.text = item.Name;
-        _iconField.sprite = item.UIIcon;
+        nameField.text = item.Name;
+        iconField.sprite = item.UIIcon;
     }
 
 }

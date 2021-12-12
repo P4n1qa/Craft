@@ -6,7 +6,10 @@ public class AssetItem :ScriptableObject, IItem
     public string Name => _name;
     public Sprite UIIcon => _uiIcon;
 
-    [SerializeField] private string _name;
-    [SerializeField] private Sprite _uiIcon;
+    public int Id => _id;
+
+    [SerializeField]  string _name;
+    [SerializeField]  Sprite _uiIcon;
+    [SerializeField]  int _id;
 
 }
